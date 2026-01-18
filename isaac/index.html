@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>The Binding of Isaac</title>
+
+    <!-- Load Ruffle -->
     <script src="ruffle.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
 </head>
-<body style="background:black; margin:0;">
+<body>
 
     <div id="game"></div>
 
     <script>
+        // Create Ruffle player
         const ruffle = window.RufflePlayer.newest();
         const player = ruffle.createPlayer();
+
+        // Add player to page
         document.getElementById("game").appendChild(player);
+
+        // Load your SWF file
         player.load("The Binding of Isaac.swf");
     </script>
 
 </body>
 </html>
+
+
 
 
