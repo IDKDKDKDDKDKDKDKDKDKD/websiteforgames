@@ -1,0 +1,212 @@
+<html lang="en-us"><head>
+    <base href="https://cdn.jsdelivr.net/gh/aukak/hollow-knight@2fc2e7149f0d5b2609b135ab48f00fd973930635/">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Hollow Knight</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: #231F20;
+        }
+
+        #unity-container {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width="1218" height="974" style="width: 974px; height: 779px; cursor: url(&quot;data:image/cur;base64,AAACAAEAJSUAAAAAAACMFQAAGAAAAAAAKAAAACUAAABKAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////Af///xP///8H////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////FP///3H///+F////Gf///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////Gv///6b////+////nv///wj///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8F////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////F////6b/////////5////zz///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///yb///+N////pv///zL///8A////AP///wD///8A////AP///wT///8I////AP///wD///8A////AP///wD///8A////Hf///5r//////////////4L///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///y7///+3///////////////I////I////wD///8A////AP///wj///9e////jf///y7///8A////AP///wD///8A////O////7H////7/////////8f///8T////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wP///+G////+f////L//////////////7P///8W////AP///wD///8Z////vf////////+n////AP///wD///8J////YP///9T///////////////b///9Q////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8C////W////4b///+b////+///////////////ff///wT///8A////Df///63/////////7////2j///9e////q/////T/////////+/////////+n////Bv///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wf///8E////Sf///+///////////////9D///8i////AP///wD///+e///////////////z////+P///////////////f////7////y////Rf///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///yH////V///////////////8////Xf///wD///8A////o//////////////////////////5////8v////3/////////wP///xf///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8W////xP///////////////////6////8/////cP///+j/////////+////7////+U////bf///7v//////////////4T///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////FP///73////////////////////6////6/////7//////////////9////8v////AP///wT///+x//////////3///91////Dv///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///xT///++///////////////+/////v////////////////////////+X////AP///wD///8U////tf/////////9////4v///7f///9q////E////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8X////wv//////////////+f////H////9///////////////T////N////wD///8q////pv////b/////////////////////////4////zT///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////IP///8v//////////////+z///+b////uv///8v///+m////SP///wL///8p////tf///////////////////+7////R////qv///4L///8X////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///y/////X///////////////e////L////x7///8n////Ef///wD///8C////ff////3//////////////8z///9F////GP///xL///8N////Af///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///9C////5f//////////////v////xP///8A////AP///wD///8A////C////6P///////////////////98////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////Vf////H//////////////5T///8D////AP///wD///8A////AP///w////+Y///////////////9////l////yD///8O////Ef///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///2j////7//////////////9s////AP///wD///8A////AP///wD///8A////U////9f////5//////////D////E////wP///6X///9+////Nv///wX///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///+E///////////////5////Tf///wD///8A////AP///wD///8A////Bf///zb///+7////+f///////////////////////////////////9r///+Q////Lv///wL///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8N////sf//////////////0v///yP///8A////AP///wD///8A////L////4b////U////9f////7//////////////////////////////////////////////9H///81////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////LP///9z//////////////5////8C////AP///wH///80////iv///9f////9//////////////////////////////////////////j////u////9f/////////5////UP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///1H////2//////////n///9k////AP///wn///9l////0////////////////////////////////////+/////J////nf///3T///9W////Xv///6H////9////xv///yD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wH///+F///////////////U////HP///zH///+x/////P/////////////////////////1////x////4n///9P////H////wj///8C////AP///wD///9+////5v///2P///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8Y////xP/////////9////mf///2H////S/////////////////////////+X///+r////aP///yj///8F////AP///wD///8A////AP///wD///8C////Lv///0X///8R////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////Qv////P/////////7v///7L////z////////////////////5////5z///9E////F////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////BP///4n//////////////+z////4///////////////4////sv///1L///8K////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///xn////S//////////7////+///////////////K////Yf///w7///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///9b////+v////////////////////X///+f////MP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8H////t////////////////////97///9s////Cf///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////Tf////T//////////////73///81////Av///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////Df///8D////9/////f///5v///8X////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///1v////1////+f///4////8M////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wn///+7////7v///4z///8J////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8t////0////37///8J////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////LP///0f///8F////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wL///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wA=&quot;), default; display: block;"></canvas>
+        <div id="unity-loading-bar" style="display: none;">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div id="unity-mobile-warning"> WebGL builds are not supported on mobile devices. </div>
+    </div>
+    <script>
+        const DB_NAME = "cachedb";
+        const STORE_NAME = "files";
+
+        function openCacheDB() {
+            return new Promise((resolve, reject) => {
+                const req = indexedDB.open(DB_NAME, 1);
+
+                req.onupgradeneeded = () => {
+                    const db = req.result;
+                    if (!db.objectStoreNames.contains(STORE_NAME)) {
+                        db.createObjectStore(STORE_NAME);
+                    }
+                };
+
+                req.onsuccess = () => resolve(req.result);
+                req.onerror = () => reject(req.error);
+            });
+        }
+
+        async function saveToCache(key, blob) {
+            const db = await openCacheDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(STORE_NAME, "readwrite");
+                tx.objectStore(STORE_NAME).put(blob, key);
+                tx.oncomplete = () => resolve();
+                tx.onerror = () => reject(tx.error);
+            });
+        }
+
+        async function loadFromCache(key) {
+            const db = await openCacheDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(STORE_NAME, "readonly");
+                const req = tx.objectStore(STORE_NAME).get(key);
+                req.onsuccess = () => resolve(req.result || null);
+                req.onerror = () => reject(req.error);
+            });
+        }
+
+        async function deleteFromCache(key) {
+            const db = await openCacheDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(STORE_NAME, "readwrite");
+                tx.objectStore(STORE_NAME).delete(key);
+                tx.oncomplete = () => resolve();
+                tx.onerror = () => reject(tx.error);
+            });
+        }
+    </script>
+    <script>
+        var loadingText = document.querySelector("#loading-text");
+        let totalBytes = 0;
+        let loadedBytes = 0;
+
+        async function fetchWithProgress(url) {
+            const response = await fetch(url);
+            const reader = response.body.getReader();
+            let chunks = [];
+            let received = 0;
+            while (true) {
+                const {
+                    done,
+                    value
+                } = await reader.read();
+                if (done) break;
+                received += value.length;
+                loadedBytes += value.length;
+                chunks.push(value);
+                let mbDone = (loadedBytes / (1024 * 1024)).toFixed(2);
+                let mbTotal = '912.81';
+                loadingText.textContent = `LOADING... ${mbDone} MB / ${mbTotal} MB`;
+            }
+            let fullBuffer = new Uint8Array(received);
+            let offset = 0;
+            for (let chunk of chunks) {
+                fullBuffer.set(chunk, offset);
+                offset += chunk.length;
+            }
+            return fullBuffer.buffer;
+        }
+        async function mergeFiles(fileParts, cacheKey) {
+            const cached = await loadFromCache(cacheKey);
+            if (cached) {
+                return URL.createObjectURL(cached);
+            }
+            const buffers = await Promise.all(
+                fileParts.map(part => fetchWithProgress(part))
+            );
+            const mergedBlob = new Blob(buffers);
+            await saveToCache(cacheKey, mergedBlob);
+            return URL.createObjectURL(mergedBlob);
+        }
+
+        function getParts(file, start, end) {
+            let parts = [];
+            for (let i = start; i <= end; i++) {
+                parts.push(file + ".part" + i);
+            }
+            return parts;
+        }
+        (async () => {
+            const [dataUrl, wasmurl] = await Promise.all([
+                mergeFiles(getParts("Build/hktruffled.data", 1, 45), "hktruffled.data"),
+                mergeFiles(getParts("Build/hktruffled.wasm", 1, 2), "hktruffled.wasm"),
+            ]);
+            var buildUrl = "Build";
+            var loaderUrl = buildUrl + "/hktruffled.loader.js";
+            var config = {
+                dataUrl: dataUrl,
+                frameworkUrl: buildUrl + "/hktruffled.framework.js",
+                codeUrl: wasmurl,
+                streamingAssetsUrl: "StreamingAssets",
+                companyName: "Team Cherry & Truffled",
+                productName: "Hollow Knight",
+                productVersion: "1.1",
+            };
+            var container = document.querySelector("#unity-container");
+            container.hidden = false;
+            var canvas = document.querySelector("#unity-canvas");
+            var loadingBar = document.querySelector("#unity-loading-bar");
+            var progressBarFull = document.querySelector("#unity-progress-bar-full");
+            var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+            var mobileWarning = document.querySelector("#unity-mobile-warning");
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                container.className = "unity-mobile";
+                config.devicePixelRatio = 1;
+                mobileWarning.style.display = "block";
+                setTimeout(() => {
+                    mobileWarning.style.display = "none";
+                }, 5000);
+            } else {
+                if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                    var meta = document.createElement('meta');
+                    meta.name = 'viewport';
+                    meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+                    document.getElementsByTagName('head')[0].appendChild(meta);
+                    container.className = "unity-mobile";
+                    canvas.className = "unity-mobile";
+                } else {
+                    function resizeCanvas() {
+                        canvas.width = window.innerWidth;
+                        canvas.height = window.innerHeight;
+                        canvas.style.width = window.innerWidth + "px";
+                        canvas.style.height = window.innerHeight + "px";
+                    }
+                    resizeCanvas();
+                    window.addEventListener('resize', resizeCanvas);
+                }
+            }
+            loadingBar.style.display = "block";
+            var script = document.createElement("script");
+            script.src = loaderUrl;
+            script.onload = () => {
+                createUnityInstance(canvas, config, (progress) => {
+                    progressBarFull.style.width = 100 * progress + "%";
+                }).then((unityInstance) => {
+                    loadingText.remove();
+                    loadingBar.style.display = "none";
+                    canvas.style.display = "block";
+                }).catch(async (message) => {
+                    await deleteFromCache("hktruffled.wasm");
+                    alert(message);
+                });
+
+            };
+            document.body.appendChild(script);
+        })();
+    </script>
+
+
+
+<script src="Build/hktruffled.loader.js"></script><script src="Build/hktruffled.framework.js"></script></body></html>
